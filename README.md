@@ -1,2 +1,2 @@
 - 👋 Hi, I’m Anton
-- 👀 Visit my home [antonpalsson.github.io/antonpalsson](https://antonpalsson.github.io/antonpalsson/)
+- 👀 Visit my home [antonpalsson](https://antonpalsson.com/)
