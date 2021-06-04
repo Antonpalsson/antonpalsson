@@ -1,62 +1,21 @@
-html {
-  background-color: #fdfdfd;
-}
-
 body {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-  font-size: 1em;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
   color: #282c34;
-}
-
-#container {
-  display: flex;
-  flex-direction: column;
-  margin: 30px auto;
-  max-width: 700px;
-}
-
-#container > * {
-  margin: 0 15px 15px 0;
-}
-
-#container #top {
-  display: flex;
-  justify-content: end;
-}
-
-#container img {
-  border-radius: 3px;
-  cursor: pointer;
-  width: 100%;
-}
-
-#container #nav {
-  display: flex;
-  justify-content: space-around;
-  font-size: 1.4em;
-}
-
-#container #bot {
-  display: flex;
-  justify-content: center;
-  font-style: italic;
-  font-size: 0.8em;
+  background-color: #fdfdfd;
 }
 
 h1 {
   display: flex;
   justify-content: center;
-  font-family: "Playfair Display", serif;
-  font-weight: 900;
-  font-size: 4em;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 4.2em;
   text-shadow: 3px 3px #5971a0;
 }
 
 h2 {
-  font-family: "Playfair Display", serif;
-  font-weight: 700;
-  font-size: 1.4em;
+  font-family: "Times New Roman", Times, serif;
 }
 
 a {
@@ -67,16 +26,68 @@ a:hover {
   color: #5971a0;
 }
 
-button {
-  background: none;
-  color: inherit;
-  border: none;
-  padding: 0;
-  font: inherit;
-  cursor: pointer;
-  outline: inherit;
+#container {
+  display: flex;
+  flex-direction: column;
+  max-width: 700px;
+  padding: 0 10px 0 10px;
+  margin: auto;
 }
 
-button:hover {
+#container > * {
+  margin: 10px 0 10px 0;
+}
+
+#header {
+  display: flex;
+  justify-content: end;
+  margin-top: 40px;
+}
+
+#header button {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+#header button:hover {
   color: #5971a0;
+}
+
+#image {
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  animation: shake 0.5s;
+}
+
+#footer {
+  display: flex;
+  justify-content: center;
+  font-style: italic;
+  font-size: 0.8em;
+  margin: 60px 0 40px 0;
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(-1deg);
+  }
+  40% {
+    transform: rotate(1deg);
+  }
+  60% {
+    transform: rotate(-1deg);
+  }
+  80% {
+    transform: rotate(1deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
